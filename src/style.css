@@ -4,13 +4,44 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  background-color: #bbbbbb;
+}
+
 ul li {
   display: inline-block;
-  background-color: #bbbbbb;
 }
 
 .user-image {
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
+}
+
+aside {
+  width: 20em;
+  height: 100%;
+  background-color: #bbbbbb;
+  position: fixed;
+}
+
+button {
+  background-color: #bbbbbb;
+  border: none;
+  padding: 0.5em;
+  line-height: 1em;
+}
+
+button:hover {
+  cursor: pointer;
 }
