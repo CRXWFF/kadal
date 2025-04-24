@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul li {
+  display: inline-block;
+  background-color: #bbbbbb;
+}
+
+.user-image {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
