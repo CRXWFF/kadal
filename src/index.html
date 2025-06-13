@@ -9,56 +9,235 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Google Classroom Arul Ganteng</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Google Classroom</title>
   </head>
   <body>
     <!-- Top Nav Bar -->
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-          </li>
-          <li><a href="#">Classroom</a></li>
-          <li>></li>
-          <li>RL210 - Pemrograman WEB</li>
-          <li>
-            <a href="#"><i class="fa-solid fa-braille"></i></a>
-          </li>
-          <li>
+      <nav class="top-nav">
+        <div class="nav-left">
+          <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
+          <div class="classroom-logo">
             <img
-              src="/img/Pas Foto SMA 1x1.jpg"
-              alt="Foto User"
-              class="user-image"
+              src="/assets/icon.jpg"
+              alt="Classroom Logo"
+              class="logo-image"
             />
-          </li>
-        </ul>
+            <span class="classroom-text">Google Classroom</span>
+          </div>
+          <span class="nav-separator">></span>
+          <div class="class-title">
+            <span>RL210 - Pemrograman WEB</span>
+            <div class="class-subtitle">2023 RPL 4A</div>
+          </div>
+        </div>
+        <div class="nav-right">
+          <button class="icon-button">
+            <i class="fa-solid fa-calendar-days"></i>
+          </button>
+          <button class="icon-button"><i class="fa-solid fa-th"></i></button>
+          <img
+            src="/img/Pas Foto SMA 1x1.jpg"
+            alt="User Profile"
+            class="user-image"
+          />
+        </div>
       </nav>
     </header>
-    <hr />
-    <main>
-      <!-- Aside -->
-      <aside>
-        <div class="aside-content">
-          <div class="button-aside-menu">
-            <button><i class="fa-solid fa-house"></i> Home</button>
+
+    <div class="content-wrapper">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-menu">
+          <a href="#" class="sidebar-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-calendar"></i>
+            <span>Calendar</span>
+          </a>
+
+          <div class="sidebar-divider"></div>
+
+          <div class="sidebar-section">
+            <div class="sidebar-section-header">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Enrolled</span>
+            </div>
+
+            <a href="#" class="sidebar-item class-item active">
+              <div class="class-icon">R</div>
+              <span>RL210 - Pemrograman WEB</span>
+              <div class="class-subtitle">2023 RPL 4A</div>
+            </a>
+
+            <a href="#" class="sidebar-item class-item">
+              <div class="class-icon">R</div>
+              <span>RL209 - Pemrograman Berorientasi Objek</span>
+              <div class="class-subtitle">2023 RPL 4A</div>
+            </a>
+
+            <a href="#" class="sidebar-item class-item">
+              <div class="class-icon">T</div>
+              <span>TEKNOLOGI BASIS DATA 4A</span>
+            </a>
+
+            <a href="#" class="sidebar-item class-item">
+              <div class="class-icon">B</div>
+              <span>Basis Data 3A</span>
+              <div class="class-subtitle">2024/2025</div>
+            </a>
+
+            <a href="#" class="sidebar-item class-item">
+              <div class="class-icon">E</div>
+              <span>English BL 101 1A</span>
+              <div class="class-subtitle">Mid Semester Test</div>
+            </a>
+
+            <a href="#" class="sidebar-item class-item">
+              <div class="class-icon">K</div>
+              <span>Kelompok 2 - Bukalapak</span>
+            </a>
+
+            <a href="#" class="sidebar-item class-item">
+              <div class="class-icon">T</div>
+              <span>Tugas Pekanan Tutorial</span>
+            </a>
           </div>
-          <div class="button-aside-menu">
-            <button><i class="fa-solid fa-calendar"></i> Calendar</button>
-          </div>
-          <hr />
-          <div class="button-aside-class">
-            <button>
-              <i class="fa-solid fa-caret-down"></i>
-              <i class="fa-solid fa-graduation-cap"></i> Enrolled
-            </button>
-          </div>
-          <div class="button-aside-class"></div>
+
+          <div class="sidebar-divider"></div>
+
+          <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-archive"></i>
+            <span>Archived classes</span>
+          </a>
+
+          <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-cog"></i>
+            <span>Settings</span>
+          </a>
         </div>
       </aside>
-      <!-- Main Content Of The Classroom -->
-    </main>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+          <a href="#" class="tab-item active">Stream</a>
+          <a href="#" class="tab-item">Classwork</a>
+          <a href="#" class="tab-item">People</a>
+        </div>
+
+        <!-- Class Banner -->
+        <div class="class-banner">
+          <div class="banner-content">
+            <h1>RL210 - Pemrograman WEB</h1>
+            <p>2023 RPL 4A</p>
+          </div>
+        </div>
+
+        <!-- Content Layout with Upcoming and Posts -->
+        <div class="content-layout">
+          <!-- Left Column - Upcoming -->
+          <div class="upcoming-column">
+            <!-- Upcoming Section -->
+            <div class="upcoming-section">
+              <h3>Upcoming</h3>
+              <p class="no-work">Woohoo, no work due soon!</p>
+              <a href="#" class="view-all">View all</a>
+            </div>
+          </div>
+
+          <!-- Right Column - Posts -->
+          <div class="posts-column">
+            <!-- Announcement Section -->
+            <div class="announcement-box">
+              <img
+                src="/img/Pas Foto SMA 1x1.jpg"
+                alt="User Profile"
+                class="user-image"
+              />
+              <div class="announcement-input">
+                <input
+                  type="text"
+                  placeholder="Announce something to your class"
+                />
+              </div>
+            </div>
+
+            <!-- Class Posts -->
+            <div class="class-posts">
+              <!-- Assignment Post -->
+              <div class="post assignment-post">
+                <div class="post-avatar">
+                  <div class="avatar-circle blue">
+                    <i class="fa-solid fa-file-alt"></i>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <div class="post-header">
+                    <div class="post-title">
+                      <span class="author">Teknologi</span> posted a new
+                      assignment: UTS Pemrograman WEB
+                    </div>
+                    <div class="post-date">Mar 25 (Senin Mar 25)</div>
+                    <button class="post-menu">
+                      <i class="fa-solid fa-ellipsis-v"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Material Post -->
+              <div class="post material-post">
+                <div class="post-avatar">
+                  <div class="avatar-circle blue">
+                    <i class="fa-solid fa-file-alt"></i>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <div class="post-header">
+                    <div class="post-title">
+                      <span class="author">Teknologi</span> posted a new
+                      material: JavaScript Part 2
+                    </div>
+                    <div class="post-date">Mar 17</div>
+                    <button class="post-menu">
+                      <i class="fa-solid fa-ellipsis-v"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Material Post -->
+              <div class="post material-post">
+                <div class="post-avatar">
+                  <div class="avatar-circle blue">
+                    <i class="fa-solid fa-file-alt"></i>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <div class="post-header">
+                    <div class="post-title">
+                      <span class="author">Teknologi</span> posted a new
+                      material: Pengenalan Java Script
+                    </div>
+                    <div class="post-date">Mar 12</div>
+                    <button class="post-menu">
+                      <i class="fa-solid fa-ellipsis-v"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
-  <footer></footer>
 </html>
